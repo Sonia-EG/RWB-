@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <!--Head portion: meta(+mobile friendly), title, link to CSS -->
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midnight Library Survey Form</title> 
+    <!--The Midnight Library, a book by Matt Haig. An ode to possibilities. Philosophical Fiction-->
+    <link href="styles.css" rel="stylesheet" type="text/css" />
+  </head>
+
+<!--Body portion: main,  -->
+  <body>
+    <main>
+       
+      <h1 id="title">Midnight Library Survey Form</h1>
+      <div class="star1"></div>
+      <p id="description">Thank you for taking the time to help us improve our services.</p>
+      <div class="star2"></div>
+      <form id="survey-form">
+      <div class="container">
+      <fieldset>
+        <label id="name-label">Name: <input id="name" type="text" required placeholder="Enter your name and surname" /></label>
+        </fieldset>
+        <fieldset>
+        <label id="email-label">Email: <input id="email" type="email" required placeholder="Enter your email" /></label>
+        </fieldset>
+        <fieldset>
+        <label id="number-label">Age: <input id="number" type="number" min="0" max ="130" required placeholder="Enter your age" /></label>
+        </fieldset>
+        <!--going crazy  css -must be inline-->
+        <fieldset>
+          <label id="dob-label">Date of birth: <input id="dob" type="date" required /></label>
+          <br>
+          <label id="dna-label">DNA sample upload: <input id="dna" type="file" required /></label>
+        </section>
+      </fieldset>
+  <!-- drop down, buttons and checks-->
+      <fieldset>
+        <label>How did you find us? 
+          <select id="dropdown">
+              <option value="">(select one)</option>
+              <option value="1">I read the book.</option>
+              <option value="2">I met the librarian.</option>
+              <option value="3">From a friend.</option>
+              <option value="4">From the internet.</option>
+          </select>
+        </label>
+        <br>
+       <label>Have you ever visited the library? </label>
+          <label><input type="radio" name="have-visited" class="inline" value="yes" /> Yes</label>
+          <label><input type="radio" name="have-visited" class="inline"  value="no"/> No</label>
+          <label><input type="radio" name="have-visited" class="inline" value="planning" /> I plan on visiting</label>
+          </label>
+          <br>
+          <label>What possibilities are you interested in?</label> 
+           
+            <div class="checkboxes">
+           <label><input type="checkbox" value="healthy" class="inline" />A healthier life</label>
+            <label><input type="checkbox" value="reading" class="inline" />Reading more books </label>
+            <label><input type="checkbox" value="mars" class="inline" />Visiting Mars</label>
+           <label><input type="checkbox" value="aliens" class="inline" />Meeting aliens</label>
+            <label><input type="checkbox" value="time-machine" class="inline" />Inventing the time machine</label>
+            </div>
+      </fieldset>
+  <!--textarea-->
+      <fieldset>
+        <label>What do you want to do with your life?
+          <textarea name="wishes" rows="3" cols="30" placeholder="I want to be kind..."></textarea>
+        </label>
+      </fieldset>
+    <input type="Submit" id="submit" value="Submit">
+    </form>
+    <p>Disclaimer</p>
+    <p id="last">Project inspired by Matt Haig's <em>"The Midnight Library".</em></p>
+    </main>
+        <div id="star3"></div>
+  </body>
+</html>
